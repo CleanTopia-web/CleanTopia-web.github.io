@@ -1,0 +1,449 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background: #3cb16f;
+    color: rgb(53, 4, 4);
+    padding: 1rem;
+    text-align: center;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+/* Estilos para el menú de navegación */
+nav ul li a {
+    color: rgb(18, 1, 1);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+nav ul li a:hover {
+    background: #FFD700; /* Amarillo */
+    color: #f9fbfa; /* Verde oscuro */
+}
+
+/* Efecto cuando el enlace está enfocado (al usar tab con teclado) */
+nav ul li a:focus {
+    background: #FFCC00; /* Amarillo fuerte */
+    color: #f6f8f7; /* Verde más oscuro */
+    outline: 2px solid #FFD700; /* Contorno accesible */
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #d1f0d1;
+}
+.hero img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #8B4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+.content img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+footer {
+    background: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+/* Estilo para la sección "Sobre Nosotros" */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.history {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.history h2 {
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de Misión, Visión y Valores */
+.mvv-container {
+    display: flex;
+    flex-wrap: wrap;  /* Acomoda en varias líneas si hay poco espacio */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.mvv-box {
+    width: 30%;
+    min-width: 250px; /* Evita que se vean demasiado pequeños en pantallas chicas */
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mvv-box:hover {
+    transform: scale(1.05);
+}
+
+.mvv-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mvv-box h3 {
+    color: #00796b;
+}
+
+/* Estilo para la sección del equipo */
+.team {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.team ul li:last-child {
+    border-bottom: none;
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #004d40;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilos para el video */
+.video {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Style para pagina problema*/
+.problem, .problem-details {
+    text-align: center;
+    padding: 20px;
+}
+.problem-img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.testimonios {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.tabla-testimonios {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.tabla-testimonios td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tabla-testimonios img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 14px;
+    color: #333;
+}
+
+cite {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.mapaMental {
+    text-align: center;
+    padding: 20px;
+}
+.conta-img {
+    width: 60%;
+    max-width: 900px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.videos {
+    text-align: center;
+    padding: 20px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+video {
+    width: 50%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+/* styles.css (actualización para la página de estadísticas) */
+.statistics, .comparison, .sources {
+    text-align: center;
+    padding: 20px;
+}
+.stats-img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sources ul {
+    list-style: none;
+    padding: 0;
+}
+.sources ul li {
+    margin: 10px 0;
+}
+.sources a {
+    color: #2E8B57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* styles.css (actualización para la página de soluciones) */
+.tips, .projects, .campaigns {
+    text-align: center;
+    padding: 20px;
+}
+.solution-img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tips ul, .projects ul, .campaigns ul {
+    list-style: none;
+    padding: 0;
+}
+.tips ul li, .projects ul li, .campaigns ul li {
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+.projects ul li img, .campaigns ul li img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* styles.css (actualización para la galería con botones) */
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+.image-slider {
+    position: relative;
+    display: inline-block;
+}
+.image-slider img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+}
+.image-slider button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image-slider button:hover {
+    background-color: #45a049;
+}
+
+
+/* styles.css (actualización para la página de contacto) */
+.contacto, .denuncias {
+    text-align: center;
+    padding: 20px;
+}
+.social-links a {
+    display: block;
+    margin: 10px;
+    font-size: 18px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+.social-links a:hover {
+    text-decoration: underline;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input, form textarea {
+    width: 80%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input[type="file"] {
+    border: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #45a049;
+}
+.denuncia-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaciado entre la imagen y el formulario */
+}
+
+.denuncia-img {
+    width: 70%; /* Ajusta el tamaño de la imagen */
+    max-width: 500px; /* Para que no sea demasiado grande */
+}
+
+.denuncia-form {
+    width: 60%; /* El formulario ocupa el resto del espacio */
+}

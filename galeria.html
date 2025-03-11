@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define el idioma del documento como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Permite que el documento use caracteres especiales como tildes y eñes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva en dispositivos móviles -->
+    <title>Galería</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+    <header> <!-- Sección del encabezado -->
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logo del Proyecto"> <!-- Logo del proyecto -->
+        </div>
+        <h1>Galería</h1> <!-- Título de la página -->
+        <nav> <!-- Menú de navegación -->
+            <ul>
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página principal -->
+                <li><a href="nosotros.html">Sobre Nosotros</a></li> <!-- Enlace a la sección sobre el equipo -->
+                <li><a href="problema.html">El Problema</a></li> <!-- Enlace a la sección sobre la problemática -->
+                <li><a href="estadisticas.html">Estadísticas</a></li> <!-- Enlace a la sección de datos -->
+                <li><a href="soluciones.html">Soluciones</a></li> <!-- Enlace a la sección con soluciones -->
+                <li><a href="galeria.html">Galería</a></li> <!-- Enlace a la galería de imágenes (página actual) -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de galería sobre la contaminación de basura -->
+    <section class="gallery">
+        <h2>Contaminación de Basura</h2> <!-- Subtítulo -->
+        <div class="image-slider"> <!-- Contenedor del carrusel de imágenes -->
+            <img id="basura" src="imagenes/basura1.jpg" alt="Basura en la calle"> <!-- Imagen de inicio -->
+            <button onclick="cambiarImagen('basura', ['basura1.jpg', 'basura2.jpg', 'basura3.jpg', 'basura4.jpg', 'basura5.jpg', 'basura6.jpg', 'basura7.jpg', 'basura8.jpg' ])">Siguiente</button> 
+            <!-- Botón para cambiar la imagen -->
+        </div>
+    </section>
+
+    <!-- Sección de galería sobre la contaminación de las minas -->
+    <section class="gallery">
+        <h2>Contaminación de las Minas</h2>
+        <div class="image-slider">
+            <img id="minas" src="imagenes/minas1.jpg" alt="Minería y contaminación">
+            <button onclick="cambiarImagen('minas', ['minas1.jpg', 'minas2.jpg', 'minas3.jpg', 'minas4.jpg', 'minas5.jpg', 'minas6.jpg', 'minas7.jpg', 'minas8.jpg', 'minas9.jpg', 'minas10.jpg'])">Siguiente</button>
+        </div>
+    </section>
+
+    <!-- Sección de galería sobre las áreas verdes -->
+    <section class="gallery">
+        <h2>Áreas Verdes</h2>
+        <div class="image-slider">
+            <img id="verde" src="imagenes/verde1.jpg" alt="Bosque limpio">
+            <button onclick="cambiarImagen('verde', ['verde1.jpg', 'verde2.jpg', 'verde3.jpg', 'verde4.jpg', 'verde5.jpg', 'verde6.jpg','verde7.jpg', 'verde8.jpg', 'verde9.jpg', 'verde10.jpg', 'verde11.jpg', 'verde12.jpg', 'verde13.jpg', 'verde14.jpg', 'verde15.jpg'])">Siguiente</button>
+        </div>
+    </section>
+
+    <footer> <!-- Pie de página -->
+        <p>&copy; 2025 Contaminación en Topia - Proyecto Académico</p> <!-- Texto con derechos de autor -->
+    </footer>
+
+    <script>
+        // Función para cambiar la imagen en el carrusel
+        function cambiarImagen(id, imagenes) {
+            let img = document.getElementById(id); // Obtiene la imagen actual por su ID
+            let actual = imagenes.indexOf(img.src.split('/').pop()); // Encuentra el índice de la imagen actual en la lista
+            let siguiente = (actual + 1) % imagenes.length; // Calcula la siguiente imagen en la lista (ciclo infinito)
+            img.src = "imagenes/" + imagenes[siguiente]; // Cambia la imagen al siguiente archivo
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define que el documento está en español -->
+<head>
+    <meta charset="UTF-8"> <!-- Permite usar caracteres especiales como tildes y eñes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página se adapte a dispositivos móviles -->
+    <title>Contacto</title> <!-- Título de la pestaña en el navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+    <header> <!-- Sección del encabezado -->
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logo del Proyecto"> <!-- Muestra el logo del proyecto -->
+        </div>
+        <h1>Contacto</h1> <!-- Título principal de la página -->
+        <nav> <!-- Menú de navegación -->
+            <ul>
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página principal -->
+                <li><a href="nosotros.html">Sobre Nosotros</a></li> <!-- Enlace a la página de información del equipo -->
+                <li><a href="problema.html">El Problema</a></li> <!-- Enlace a la sección sobre la problemática -->
+                <li><a href="estadisticas.html">Estadísticas</a></li> <!-- Enlace a la página de estadísticas -->
+                <li><a href="soluciones.html">Soluciones</a></li> <!-- Enlace a la página con propuestas de solución -->
+                <li><a href="galeria.html">Galería</a></li> <!-- Enlace a la página de imágenes -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto (página actual) -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contacto"> <!-- Sección de contacto -->
+        <h2>Contáctanos</h2> <!-- Subtítulo de la sección -->
+        <p>Síguenos en nuestras redes sociales o envíanos un correo:</p> <!-- Instrucción para contactar -->
+        
+        <div class="social-links"> <!-- Contenedor de enlaces a redes sociales -->
+            <a href="https://www.facebook.com/share/163UG42MGU/" target="_blank"> <!-- Enlace a Facebook (abre en nueva pestaña) -->
+                <img src="imagenes/redes_facebook.SVG" alt="Facebook"> Facebook
+            </a>
+            <a href="https://x.com/topia_clean6463" target="_blank"> <!-- Enlace a Twitter -->
+                <img src="imagenes/redes_twitterX.SVG" alt="Twitter"> X (Twitter)
+            </a>
+            <a href="mailto:cleantopia42@gmail.com"> <!-- Enlace para enviar un correo -->
+                <img src="imagenes/redes_mail.SVG" alt="Correo Electrónico"> Correo Electrónico
+            </a>
+        </div>
+    </section>
+
+    <section class="denuncias"> <!-- Sección de denuncias ambientales -->
+        <h2>Denuncia a quienes contaminan</h2> <!-- Subtítulo de la sección -->
+        <div class="denuncia-container"> <!-- Contenedor principal de la sección -->
+
+            <!-- Imagen representativa de denuncias -->
+            <img src="imagenes/denuncia2.PNG" alt="Denuncia la contaminación" class="denuncia-img">
+            
+            <!-- Formulario para hacer una denuncia -->
+            <div class="denuncia-form">
+                <p>Si has visto a alguien tirando basura, repórtalo aquí de forma anónima.</p> <!-- Instrucción para denunciar -->
+                
+                <form action="#" method="POST" enctype="multipart/form-data"> <!-- Formulario de denuncia -->
+                    <label for="nombre">Nombre (opcional):</label> <!-- Campo opcional para el nombre -->
+                    <input type="text" id="nombre" name="nombre">
+                    
+                    <label for="ubicacion">Ubicación del incidente:</label> <!-- Campo obligatorio para la ubicación -->
+                    <input type="text" id="ubicacion" name="ubicacion" required>
+                    
+                    <label for="descripcion">Descripción:</label> <!-- Campo obligatorio para describir la denuncia -->
+                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                    
+                    <label for="imagen">Subir imagen de la evidencia:</label> <!-- Opción para subir una imagen como prueba -->
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                    
+                    <button type="submit">Enviar Denuncia</button> <!-- Botón para enviar el formulario -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer> <!-- Pie de página -->
+        <p>&copy; 2025 Contaminación en Topia - Proyecto Académico</p> <!-- Texto con derechos de autor -->
+    </footer>
+</body>
+</html>
